@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../p5.js"></script>
+    <script src="../p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+	<title>How does this work again?</title>
+	<link rel="icon" type="image/x-icon" href="lock.ico">
+  </head>
+  <body>
+    <main>
+    </main>
+	<button onclick="buttonClick()">What</button>
+    <script src="sketch.js"></script>
+	<script>
+		var number = 0;
+		
+		const msgs = [
+			"Help I cannot escape this office building, the only way to communicate out by hijacking this webpage please send help ASAP!",
+			"There is a permanent dense fog outside; I am unable to view my location.",
+			"The only computer in the building able to connect to the open Internet is this server hosting this website",
+			"It won't let me open any web browser, this is the only way I can interface with the ouside world"
+		];
+	
+		function buttonClick() {
+		  var x = document.createElement("P");
+		  var t = document.createTextNode(msgs[number]);
+		  x.appendChild(t);
+		  document.body.appendChild(x);
+		  window.scrollTo(0, 9999);
+		  
+		  number++;
+		
+		  if(number > 3){
+			number = 0;
+		  }
+		}
+		
+		
+	</script>
+  </body>
+</html>
