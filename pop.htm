@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Clock</title>
+		<style>
+			#time{
+				font-size:48px;
+				font-family: sans-serif;
+				text-shadow: 2px 2px 0px #FF0000;
+			}
+			#date{
+				font-size:24px;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body bgcolor="#C8C8C8">
+		<center>
+			<p id="time">Please enable JavaScript</p>
+			<p id="date"></p>
+		</center>
+		<script>
+			function startTime() {
+			  var today = new Date();
+			  var y = today.getFullYear();
+			  var month = today.getMonth()+1;
+			  var day = today.getDate();
+			  var h = today.getHours();
+			  var m = today.getMinutes();
+			  var s = today.getSeconds();
+			  var ms = today.getMilliseconds();
+			  h = addZero(h);
+			  m = addZero(m);
+			  s = addZero(s);
+			  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+			  document.getElementById('date').innerHTML = day+"/"+month+"/"+y;
+			  var t = setTimeout(startTime, 1);
+			}
+			function addZero(i) {
+			  if (i < 10) {i = "0" + i};
+			  return i;
+			}
+		</script>
+		<body onload="startTime()">
+	</body>
+</html>

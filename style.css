@@ -1,0 +1,18 @@
+.navigation{
+	text-decoration: none;
+	
+}
+#navigator{
+	background-color: #d09c04;
+}
+
+.bored{
+	border: outset;
+}
+#msg{
+	border-style: solid;
+	border-color: black;
+	font-family: serif;
+	color: white;
+	background-color: blue;
+}
