@@ -11,7 +11,7 @@
 
 <TABLE summary="Main display grid.">
 <TR>
-<TD style="margin: 55px;"><IMG SRC="BELL.ICO"></TD><TD></TD>
+<TD style="margin: 55px;"><IMG SRC="bell.ico" onclick="pineapple()"></TD><TD></TD>
 <TD><PRE><BIG><B>NORTH-EAST TELECOM</B></BIG>
 SINCE 1964<PRE></TD>
 </TR>
@@ -50,7 +50,7 @@ SINCE 1964<PRE></TD>
 <TR><TD>1253<TD>Windows 3.1 Greek<TD>X<TD><TD>X<TD>X<TD>X
 <TR><TD>1254<TD>Windows 3.1 Turkish<TD>X<TD><TD>X<TD>X<TD>X
 <TR><TD>1255<TD>what's going on<TD>X<TD><TD>WHY AM I<TD>STUCK<TD>X
-<TR><TD>1256<TD>who locked the doors??<TD>X<TD style="background-color: white;">:(<TD><TD><TD>X
+<TR><TD>1256<TD>who locked the doors??<TD>X<TD style="background-color: white;" onclick="coffee()">:(<TD><TD><TD>X
 <TR><TD>1257<TD>CAN ANYONE HEAR ME?<TD>X<TD><TD><TD><TD>X
 <TR><TD>1361<TD>how do you make this thing work<TD>X<TD><TD><B style="color: red;" onclick="pop()">HELLO???</B><TD>**<TD>X
 <TBODY>
@@ -63,6 +63,14 @@ SINCE 1964<PRE></TD>
 <SCRIPT>
 	function pop(){
 		myWindow = window.open("pop.htm", "", "width=320,height=240");
+	}
+	
+	function pineapple(){
+		myWindow = window.open("p.htm", "", "width=320,height=240");
+	}
+	
+	function coffee(){
+		myWindow = window.open("other/coffee.htm", "", "width=320,height=240");
 	}
 </SCRIPT>
 </BODY>
